@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming & Tech | Brampton FBLC</title>
+  <meta name="description" content="Brampton Future Business Leaders Club - Canada's most structured and professional youth-led business leadership organization.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-out">
+
+  <!-- Page Transition Curtain -->
+  <div id="pt">
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+        <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="founder.html" class="">Founder</a></li>
+      <li class="has-sub">
+        <a href="programs.html" class="active">Programs</a>
+        <div class="nav-dropdown">
+          <a href="programs.html">Overview</a>
+          <a href="academics.html">Academics</a>
+          <a href="governance.html">Governance</a>
+          <a href="programming.html">Programming & Tech</a>
+        </div>
+      </li>
+      <li><a href="events.html" class="">Events</a></li>
+      <li><a href="team.html" class="">Team</a></li>
+      <li><a href="contact.html" class="">Contact</a></li>
+      <li><a href="join.html" class="nav-cta-btn">Join Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder: Hasham Ahmed</a>
+    <a href="programs.html">Programs Overview</a>
+    <div class="mob-sub">
+      <a href="academics.html">Academics</a>
+      <a href="governance.html">Governance</a>
+      <a href="programming.html">Programming & Tech</a>
+    </div>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" style="color: var(--red-2); font-weight: 700;">Join Us</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg bg-skyline-twilight"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <a href="programs.html">Programs</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <span>Programming</span>
+      </div>
+      <span class="ph-tag">Innovation Pillar</span>
+      <h1 class="ph-title">Programming & <span>Tech</span></h1>
+      <p class="ph-desc">
+        Empowering students to build high-performance software, automated financial systems, and venture-ready technical solutions.
+      </p>
+    </div>
+    <div class="ph-line"></div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+        <div class="card prog-card gold reveal d1">
+          <div class="prog-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+          <h3>Fintech Engineering</h3>
+          <p>Algorithmic trading models, financial ledger architectures, and transaction automation.</p>
+        </div>
+
+        <div class="card prog-card gold reveal d2">
+          <div class="prog-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+          <h3>Full-Stack Enterprise Systems</h3>
+          <p>Building production-grade web applications, cloud APIs, and scalable infrastructure.</p>
+        </div>
+
+        <div class="card prog-card gold reveal d3">
+          <div class="prog-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+          <h3>Technical Product Strategy</h3>
+          <p>Bridging code with commercialization, agile sprint execution, and technical venture pitching.</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 64px;">
+        <a href="join.html" class="btn btn-outline" style="border-color: var(--gold); color: var(--gold);">Join Tech Stream <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+            <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+        </a>
+        <p>Canada’s most structured and professional youth-led business organization. Developing future executives, innovators, and entrepreneurs.</p>
+      </div>
+
+      <div class="ft-col">
+        <h5>Organization</h5>
+        <ul>
+          <li><a href="about.html">About FBLC</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="team.html">Executive Team</a></li>
+          <li><a href="events.html">National Events</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="governance.html">Governance & Policy</a></li>
+          <li><a href="programming.html">Programming & Tech</a></li>
+          <li><a href="programs.html">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="join.html">Membership Application</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:info@bramptonfblc.ca">info@bramptonfblc.ca</a></li>
+          <li><a href="#">Member Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <p>&copy; 2026 Brampton FBLC (Future Business Leaders Club). All rights reserved.</p>
+      <p>Brampton, Ontario, Canada</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

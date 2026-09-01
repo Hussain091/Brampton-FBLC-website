@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Brampton FBLC | Membership Application</title>
+  <meta name="description" content="Apply for general membership with Brampton Future Business Leaders Club - Canada's premier youth-led business leadership organization.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-out">
+
+  <!-- Page Transition Curtain -->
+  <div id="pt">
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+        <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="founder.html">Founder</a></li>
+      <li class="has-sub">
+        <a href="programs.html">Programs</a>
+        <div class="nav-dropdown">
+          <a href="programs.html">Overview</a>
+          <a href="academics.html">Academics</a>
+          <a href="governance.html">Governance</a>
+          <a href="programming.html">Programming & Tech</a>
+        </div>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeWgI31jsXvY7V5zqlcCScDZbE_JbvhEncBajOwKSuVElZ6bA/viewform" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">Join Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder: Hasham Ahmed</a>
+    <a href="programs.html">Programs Overview</a>
+    <div class="mob-sub">
+      <a href="academics.html">Academics</a>
+      <a href="governance.html">Governance</a>
+      <a href="programming.html">Programming & Tech</a>
+    </div>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWgI31jsXvY7V5zqlcCScDZbE_JbvhEncBajOwKSuVElZ6bA/viewform" target="_blank" rel="noopener noreferrer" style="color: var(--red-2); font-weight: 700;">Join Us</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg bg-brampton-night"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <span>Join Us</span>
+      </div>
+      <span class="ph-tag">Membership Application</span>
+      <h1 class="ph-title">Join <span>Brampton FBLC</span></h1>
+      <p class="ph-desc">
+        Take your place in Canada's premier youth business organization. Applications are reviewed on a rolling basis.
+      </p>
+    </div>
+    <div class="ph-line"></div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px; align-items: center;">
+        
+        <!-- Left Column: Steps -->
+        <div class="rev-l">
+          <span class="sec-tag">Application Roadmap</span>
+          <h2 class="sec-title">The Onboarding <span>Process</span></h2>
+          <div class="sec-divider"></div>
+          
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h4>Complete Google Form Application</h4>
+                <p>Fill out your background, academic achievements, and chosen career focus area.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h4>Executive Review &amp; Interview</h4>
+                <p>Selected applicants meet with executive council leads for case discussion and onboarding alignment.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h4>Cohort Induction &amp; Specialization</h4>
+                <p>Formal placement in Academics, Governance, or Technology with dedicated mentor assignment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: High-Impact Application Portal Card -->
+        <div class="rev-r">
+          <div class="card tilt-card" style="padding: 44px 36px; background: linear-gradient(135deg, rgba(14,34,68,0.85), rgba(7,20,40,0.95)); border: 1px solid var(--borderH); box-shadow: 0 20px 60px rgba(0,0,0,0.65); border-radius: var(--radiusL); text-align: center;">
+            
+            <div class="badge badge-red" style="margin-bottom: 20px;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 3.6 3.9-.7-1.3 3.8 3.9 1.1-2.9 2.7 1.8 3.6-3.8-.4-1.4 3.7L12 16.4l-2 3.4-1.4-3.7-3.8.4 1.8-3.6-2.9-2.7 3.9-1.1-1.3-3.8 3.9.7L12 2z"/></svg> Official Cohort Application
+            </div>
+
+            <h3 style="font-size: 28px; font-weight: 900; color: #fff; line-height: 1.15; margin-bottom: 12px;">
+              General Member Application
+            </h3>
+            
+            <p style="font-size: 14.5px; color: var(--muted); line-height: 1.7; margin-bottom: 28px;">
+              Ready to accelerate your trajectory in finance, corporate governance, or technology? Click below to submit your official application.
+            </p>
+
+            <!-- Membership Perks Highlight List -->
+            <div style="text-align: left; margin-bottom: 32px;">
+              <div class="apply-benefit-item">
+                <div class="apply-benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div>
+                  <h5 style="font-size: 13.5px; font-weight: 700; color: #fff;">National Summit &amp; Competition Access</h5>
+                  <p style="font-size: 12px; color: var(--muted);">Direct delegation entry to 6+ premier Canadian business competitions.</p>
+                </div>
+              </div>
+
+              <div class="apply-benefit-item">
+                <div class="apply-benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div>
+                  <h5 style="font-size: 13.5px; font-weight: 700; color: #fff;">Exec Connect Industry Mentorship</h5>
+                  <p style="font-size: 12px; color: var(--muted);">1-on-1 networking and advisory sessions with executive leaders.</p>
+                </div>
+              </div>
+
+              <div class="apply-benefit-item">
+                <div class="apply-benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div>
+                  <h5 style="font-size: 13.5px; font-weight: 700; color: #fff;">Specialized Curriculum Streams</h5>
+                  <p style="font-size: 12px; color: var(--muted);">Corporate finance modeling, parliamentary policy, and fintech code.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Animated Action Button -->
+            <div style="margin-bottom: 20px;">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWgI31jsXvY7V5zqlcCScDZbE_JbvhEncBajOwKSuVElZ6bA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-apply-glow" style="width: 100%;">
+                General Member Application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+
+            <div style="font-size: 12px; color: rgba(106, 144, 190, 0.7); display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <span>Estimated completion time: 3–5 minutes</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+            <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+        </a>
+        <p>Canada’s most structured and professional youth-led business organization. Developing future executives, innovators, and entrepreneurs.</p>
+      </div>
+
+      <div class="ft-col">
+        <h5>Organization</h5>
+        <ul>
+          <li><a href="about.html">About FBLC</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="team.html">Executive Team</a></li>
+          <li><a href="events.html">National Events</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="governance.html">Governance &amp; Policy</a></li>
+          <li><a href="programming.html">Programming &amp; Tech</a></li>
+          <li><a href="programs.html">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeWgI31jsXvY7V5zqlcCScDZbE_JbvhEncBajOwKSuVElZ6bA/viewform" target="_blank" rel="noopener noreferrer">General Member Application</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:info@bramptonfblc.ca">info@bramptonfblc.ca</a></li>
+          <li><a href="#">Member Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <p>&copy; 2026 Brampton FBLC (Future Business Leaders Club). All rights reserved.</p>
+      <p>Brampton, Ontario, Canada</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

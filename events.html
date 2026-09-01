@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Competitions | Brampton FBLC</title>
+  <meta name="description" content="Brampton Future Business Leaders Club - Canada's most structured and professional youth-led business leadership organization.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-out">
+
+  <!-- Page Transition Curtain -->
+  <div id="pt">
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+        <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="founder.html" class="">Founder</a></li>
+      <li class="has-sub">
+        <a href="programs.html" class="">Programs</a>
+        <div class="nav-dropdown">
+          <a href="programs.html">Overview</a>
+          <a href="academics.html">Academics</a>
+          <a href="governance.html">Governance</a>
+          <a href="programming.html">Programming & Tech</a>
+        </div>
+      </li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="team.html" class="">Team</a></li>
+      <li><a href="contact.html" class="">Contact</a></li>
+      <li><a href="join.html" class="nav-cta-btn">Join Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder: Hasham Ahmed</a>
+    <a href="programs.html">Programs Overview</a>
+    <div class="mob-sub">
+      <a href="academics.html">Academics</a>
+      <a href="governance.html">Governance</a>
+      <a href="programming.html">Programming & Tech</a>
+    </div>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" style="color: var(--red-2); font-weight: 700;">Join Us</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg bg-fbla-stage"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <span>Events</span>
+      </div>
+      <span class="ph-tag">Competitions & Summits</span>
+      <h1 class="ph-title">National <span>Events</span></h1>
+      <p class="ph-desc">
+        Premier conferences, case competitions, and executive networking symposiums throughout the academic year.
+      </p>
+    </div>
+    <div class="ph-line"></div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+        
+        <div class="card ev-card reveal d1">
+          <div class="ev-header">
+            <span class="ev-badge nat">National Flagship</span>
+            <div class="ev-date">
+              <div class="mo">OCT</div>
+              <div class="dy">14</div>
+            </div>
+          </div>
+          <div class="ev-body">
+            <h3>FBLC National Business Summit</h3>
+            <p>Our premier nationwide case competition gathering hundreds of delegates for high-stakes business simulations and corporate keynotes.</p>
+            <div class="ev-meta">
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Toronto, ON</div>
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> 300+ Delegates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card ev-card reveal d2">
+          <div class="ev-header">
+            <span class="ev-badge reg">Regional Conference</span>
+            <div class="ev-date">
+              <div class="mo">NOV</div>
+              <div class="dy">22</div>
+            </div>
+          </div>
+          <div class="ev-body">
+            <h3>GTA Regional Leadership Forum</h3>
+            <p>An executive leadership development day featuring industry executive panels, workshop intensives, and regional pitch competitions.</p>
+            <div class="ev-meta">
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Brampton, ON</div>
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> 150+ Delegates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card ev-card reveal d3">
+          <div class="ev-header">
+            <span class="ev-badge loc">Orientation</span>
+            <div class="ev-date">
+              <div class="mo">SEP</div>
+              <div class="dy">18</div>
+            </div>
+          </div>
+          <div class="ev-body">
+            <h3>Fall Orientation & Induction</h3>
+            <p>Welcoming new cohort members, unveiling the annual competition schedule, and assigning specialized program tracks.</p>
+            <div class="ev-meta">
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Brampton, ON</div>
+              <div class="ev-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Members Only</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+            <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+        </a>
+        <p>Canada’s most structured and professional youth-led business organization. Developing future executives, innovators, and entrepreneurs.</p>
+      </div>
+
+      <div class="ft-col">
+        <h5>Organization</h5>
+        <ul>
+          <li><a href="about.html">About FBLC</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="team.html">Executive Team</a></li>
+          <li><a href="events.html">National Events</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="governance.html">Governance & Policy</a></li>
+          <li><a href="programming.html">Programming & Tech</a></li>
+          <li><a href="programs.html">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="join.html">Membership Application</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:info@bramptonfblc.ca">info@bramptonfblc.ca</a></li>
+          <li><a href="#">Member Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <p>&copy; 2026 Brampton FBLC (Future Business Leaders Club). All rights reserved.</p>
+      <p>Brampton, Ontario, Canada</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

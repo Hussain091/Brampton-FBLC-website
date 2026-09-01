@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Leadership | Brampton FBLC</title>
+  <meta name="description" content="Brampton Future Business Leaders Club - Canada's most structured and professional youth-led business leadership organization.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-out">
+
+  <!-- Page Transition Curtain -->
+  <div id="pt">
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+        <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="founder.html" class="">Founder</a></li>
+      <li class="has-sub">
+        <a href="programs.html" class="">Programs</a>
+        <div class="nav-dropdown">
+          <a href="programs.html">Overview</a>
+          <a href="academics.html">Academics</a>
+          <a href="governance.html">Governance</a>
+          <a href="programming.html">Programming & Tech</a>
+        </div>
+      </li>
+      <li><a href="events.html" class="">Events</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="contact.html" class="">Contact</a></li>
+      <li><a href="join.html" class="nav-cta-btn">Join Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder: Hasham Ahmed</a>
+    <a href="programs.html">Programs Overview</a>
+    <div class="mob-sub">
+      <a href="academics.html">Academics</a>
+      <a href="governance.html">Governance</a>
+      <a href="programming.html">Programming & Tech</a>
+    </div>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" style="color: var(--red-2); font-weight: 700;">Join Us</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg bg-trophy-celebration"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <span>Team</span>
+      </div>
+      <span class="ph-tag">Executive Council</span>
+      <h1 class="ph-title">Meet the <span>Leadership</span></h1>
+      <p class="ph-desc">
+        Student executives driving the strategic operations, academic rigor, and nationwide presence of Brampton FBLC.
+      </p>
+    </div>
+    <div class="ph-line"></div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+        
+        <div class="card team-card reveal d1">
+          <div class="team-avatar">P</div>
+          <h4>President</h4>
+          <div class="t-role">Executive Director</div>
+          <p class="t-bio">Directs overarching strategy, institutional partnerships, and executive council execution.</p>
+        </div>
+
+        <div class="card team-card reveal d2">
+          <div class="team-avatar">VP</div>
+          <h4>VP Academics</h4>
+          <div class="t-role">Academic Operations</div>
+          <p class="t-bio">Leads curriculum development, case study libraries, and competition training tracks.</p>
+        </div>
+
+        <div class="card team-card reveal d3">
+          <div class="team-avatar">VE</div>
+          <h4>VP Events</h4>
+          <div class="t-role">Conferences & Summits</div>
+          <p class="t-bio">Oversees logistics, venue partnerships, and delegate coordination for all major events.</p>
+        </div>
+
+        <div class="card team-card reveal d4">
+          <div class="team-avatar">CF</div>
+          <h4>CFO</h4>
+          <div class="t-role">Finance & Sponsorships</div>
+          <p class="t-bio">Manages corporate financial budgeting, treasury compliance, and sponsor relations.</p>
+        </div>
+
+        <div class="card team-card reveal d5">
+          <div class="team-avatar">CM</div>
+          <h4>CMO</h4>
+          <div class="t-role">Marketing & Communications</div>
+          <p class="t-bio">Commands brand identity, media campaigns, and delegate recruitment across Ontario.</p>
+        </div>
+
+        <div class="card team-card reveal d6">
+          <div class="team-avatar">CT</div>
+          <h4>CTO</h4>
+          <div class="t-role">Technology & Systems</div>
+          <p class="t-bio">Leads software platforms, data systems, and programming stream curriculum.</p>
+        </div>
+
+        <div class="card team-card reveal d7">
+          <div class="team-avatar">VG</div>
+          <h4>VP Governance</h4>
+          <div class="t-role">Policy & Compliance</div>
+          <p class="t-bio">Ensures strict constitutional adherence, ethical leadership standards, and bylaw review.</p>
+        </div>
+
+        <div class="card team-card reveal d8">
+          <div class="team-avatar">EC</div>
+          <h4>VP Exec Connect</h4>
+          <div class="t-role">Mentorship & Network</div>
+          <p class="t-bio">Coordinates executive mentorship matching with industry professionals from global firms.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+            <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+        </a>
+        <p>Canada’s most structured and professional youth-led business organization. Developing future executives, innovators, and entrepreneurs.</p>
+      </div>
+
+      <div class="ft-col">
+        <h5>Organization</h5>
+        <ul>
+          <li><a href="about.html">About FBLC</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="team.html">Executive Team</a></li>
+          <li><a href="events.html">National Events</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="governance.html">Governance & Policy</a></li>
+          <li><a href="programming.html">Programming & Tech</a></li>
+          <li><a href="programs.html">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="join.html">Membership Application</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:info@bramptonfblc.ca">info@bramptonfblc.ca</a></li>
+          <li><a href="#">Member Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <p>&copy; 2026 Brampton FBLC (Future Business Leaders Club). All rights reserved.</p>
+      <p>Brampton, Ontario, Canada</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

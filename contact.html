@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Brampton FBLC</title>
+  <meta name="description" content="Brampton Future Business Leaders Club - Canada's most structured and professional youth-led business leadership organization.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-out">
+
+  <!-- Page Transition Curtain -->
+  <div id="pt">
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+    <div class="pt-strip"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+        <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+      <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="founder.html" class="">Founder</a></li>
+      <li class="has-sub">
+        <a href="programs.html" class="">Programs</a>
+        <div class="nav-dropdown">
+          <a href="programs.html">Overview</a>
+          <a href="academics.html">Academics</a>
+          <a href="governance.html">Governance</a>
+          <a href="programming.html">Programming & Tech</a>
+        </div>
+      </li>
+      <li><a href="events.html" class="">Events</a></li>
+      <li><a href="team.html" class="">Team</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="join.html" class="nav-cta-btn">Join Us</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder: Hasham Ahmed</a>
+    <a href="programs.html">Programs Overview</a>
+    <div class="mob-sub">
+      <a href="academics.html">Academics</a>
+      <a href="governance.html">Governance</a>
+      <a href="programming.html">Programming & Tech</a>
+    </div>
+    <a href="events.html">Events</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" style="color: var(--red-2); font-weight: 700;">Join Us</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg bg-skyline-day"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> <span>Contact</span>
+      </div>
+      <span class="ph-tag">Get in Touch</span>
+      <h1 class="ph-title">Connect with <span>FBLC</span></h1>
+      <p class="ph-desc">
+        For sponsorship inquiries, institutional partnerships, or general questions, connect with our council.
+      </p>
+    </div>
+    <div class="ph-line"></div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px; align-items: start;">
+        
+        <div class="rev-l">
+          <span class="sec-tag">Direct Communication</span>
+          <h2 class="sec-title">We’re Here to <span>Collaborate</span></h2>
+          <div class="sec-divider"></div>
+          <p class="sec-desc" style="margin-bottom: 32px;">
+            Our executive team reviews communications daily and aims to respond to all inquiries within 24 to 48 hours.
+          </p>
+
+          <div class="feat-list" style="margin-top: 0;">
+            <div class="feat-item">
+              <div class="feat-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+              <div class="feat-content">
+                <h4>Official Email</h4>
+                <p>info@bramptonfblc.ca</p>
+              </div>
+            </div>
+
+            <div class="feat-item">
+              <div class="feat-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+              <div class="feat-content">
+                <h4>Headquarters</h4>
+                <p>Brampton, Ontario, Canada</p>
+              </div>
+            </div>
+
+            <div class="feat-item">
+              <div class="feat-icon gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+              <div class="feat-content">
+                <h4>Operating Schedule</h4>
+                <p>Academic Cohorts: September – June</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-r">
+          <div class="card" style="padding: 40px; background: var(--navy); border: 1px solid var(--border);">
+            <h3 style="font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 24px;">Send a Message</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting Brampton FBLC. An executive officer will respond shortly.');">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" required placeholder="John">
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" required placeholder="Doe">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" required placeholder="john.doe@example.com">
+              </div>
+
+              <div class="form-group">
+                <label>Subject</label>
+                <select required>
+                  <option value="">Select subject...</option>
+                  <option>Corporate Sponsorship & Partnerships</option>
+                  <option>High School Chapter Inquiries</option>
+                  <option>Competition & Event Inquiries</option>
+                  <option>Executive Council Communication</option>
+                  <option>General Inquiries</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Message</label>
+                <textarea required placeholder="Write your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-red" style="width: 100%; justify-content: center;">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-mark" style="background: transparent; overflow: hidden; border-radius: 8px;">
+            <img src="images/logo.png" alt="Brampton FBLC Logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="nav-logo-text">Brampton <em>FBLC</em></div>
+        </a>
+        <p>Canada’s most structured and professional youth-led business organization. Developing future executives, innovators, and entrepreneurs.</p>
+      </div>
+
+      <div class="ft-col">
+        <h5>Organization</h5>
+        <ul>
+          <li><a href="about.html">About FBLC</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="team.html">Executive Team</a></li>
+          <li><a href="events.html">National Events</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="governance.html">Governance & Policy</a></li>
+          <li><a href="programming.html">Programming & Tech</a></li>
+          <li><a href="programs.html">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="join.html">Membership Application</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="mailto:info@bramptonfblc.ca">info@bramptonfblc.ca</a></li>
+          <li><a href="#">Member Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-bottom">
+      <p>&copy; 2026 Brampton FBLC (Future Business Leaders Club). All rights reserved.</p>
+      <p>Brampton, Ontario, Canada</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
