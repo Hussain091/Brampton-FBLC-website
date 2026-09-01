@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initOptimizedParticles();
   initOptimizedParallax();
+  initTeamFilters();
 });
 
 /* --- Fast Page Transitions --- */
@@ -40,7 +41,7 @@ function initPageTransitions() {
 function initNavbar() {
   const navbar = document.getElementById('navbar');
   if (!navbar) return;
-  
+
   let ticking = false;
   window.addEventListener('scroll', () => {
     if (!ticking) {
@@ -254,4 +255,63 @@ function initOptimizedParallax() {
       isHovering = false;
     }
   }
+}
+
+/* --- Team Hierarchy & Category Filter Engine --- */
+function initTeamFilters() {
+  const filterBtns = document.querySelectorAll('.team-filter-btn');
+  if (!filterBtns.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-filter');
+      
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const chartSection = document.getElementById('org-chart-section');
+      const bodSection = document.getElementById('bod-section');
+      const srBoaSection = document.getElementById('sr-boa-section');
+      const boaSection = document.getElementById('boa-section');
+
+      if (target === 'chart') {
+        if (chartSection) {
+          chartSection.style.display = 'block';
+          chartSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (bodSection) bodSection.style.display = 'block';
+        if (srBoaSection) srBoaSection.style.display = 'block';
+        if (boaSection) boaSection.style.display = 'block';
+      } else if (target === 'all') {
+        if (chartSection) chartSection.style.display = 'block';
+        if (bodSection) bodSection.style.display = 'block';
+        if (srBoaSection) srBoaSection.style.display = 'block';
+        if (boaSection) boaSection.style.display = 'block';
+      } else if (target === 'bod') {
+        if (chartSection) chartSection.style.display = 'none';
+        if (bodSection) {
+          bodSection.style.display = 'block';
+          bodSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (srBoaSection) srBoaSection.style.display = 'none';
+        if (boaSection) boaSection.style.display = 'none';
+      } else if (target === 'sr-boa') {
+        if (chartSection) chartSection.style.display = 'none';
+        if (bodSection) bodSection.style.display = 'none';
+        if (srBoaSection) {
+          srBoaSection.style.display = 'block';
+          srBoaSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (boaSection) boaSection.style.display = 'none';
+      } else if (target === 'boa') {
+        if (chartSection) chartSection.style.display = 'none';
+        if (bodSection) bodSection.style.display = 'none';
+        if (srBoaSection) srBoaSection.style.display = 'none';
+        if (boaSection) {
+          boaSection.style.display = 'block';
+          boaSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
 }
